@@ -33,17 +33,26 @@ public class UsuarioService {
 
     private List<Disciplina> criarIniciais() {
         List<Disciplina> disciplinas = new ArrayList<>();
+
         DisciplinaDTO disciplinaDTO1 = new DisciplinaDTO
-                ("POO", "Programação orientada a objetos", 96);
+                ("POO", "Introduz conceitos da programação orientada a objetos usando Java. Aborda princípios como classes, objetos, herança, polimorfismo e encapsulamento.", 96);
 
         DisciplinaDTO disciplinaDTO2 = new DisciplinaDTO
-                ("API", "Desenvolvimento de API Restful", 102);
+                ("API Restful", "Ensina a criação de APIs RESTful utilizando Java e Spring Boot. Foca na arquitetura de APIs e nos padrões de comunicação entre sistemas.", 102);
 
         DisciplinaDTO disciplinaDTO3 = new DisciplinaDTO
-                ("WEB", "Desenvolvimento WEB com React", 54);
+                ("WEB (React)", "Disciplina focada em React, uma biblioteca JavaScript para a construção de interfaces de usuário dinâmicas, especialmente para aplicações web.", 54);
+
+        DisciplinaDTO disciplinaDTO4 = new DisciplinaDTO
+                ("Mobile (React Native)", "Disciplina voltada para o desenvolvimento de aplicativos móveis usando React Native, permitindo o desenvolvimento de apps para Android e iOS com código compartilhado.", 66);
+
+        DisciplinaDTO disciplinaDTO5 = new DisciplinaDTO
+                ("Banco de Dados", "Foca nos fundamentos de bancos de dados, especialmente no uso do SQL e PostgreSQL para criação, manipulação e manutenção de bancos de dados relacionais.", 42);
         disciplinas.add(new Disciplina(disciplinaDTO1));
         disciplinas.add(new Disciplina(disciplinaDTO2));
         disciplinas.add(new Disciplina(disciplinaDTO3));
+        disciplinas.add(new Disciplina(disciplinaDTO4));
+        disciplinas.add(new Disciplina(disciplinaDTO5));
         return disciplinas;
     }
 
